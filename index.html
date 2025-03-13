@@ -11,22 +11,18 @@
     <!-- Fontawesome link (For the icons) -->
     <script src="https://kit.fontawesome.com/072e5df971.js" crossorigin="anonymous"></script>
     <style>
-        .nav-pill .nav-link {
-            color: grey;
-        }
-        .nav-pill .nav-link.active {
-            color: blue;
-        }
         .grid-img {
             width: 100%;
             height: 300px;
             object-fit: cover;
         }
+
         .single-img {
             width: 100%;
             height: auto;
             object-fit: contain;
         }
+
         .post-card {
             border: 1px solid #ddd;
             padding: 10px;
@@ -45,16 +41,16 @@
                 <h5 class="d-inline-block fs-5">Instagram</h5>
             </div>
             <div class="d-flex align-right justify-content-end">
-                <button type="button" class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#postModal">
                     Create a new post
                 </button>
                 <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
                         <i class="fa-solid fa-gear"></i>
                     </button>
-                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                    <ul class="dropdown-menu dropdown-menu-end">
                         <li><a class="dropdown-item" href="#">Profile</a></li>
-                        <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                        <li><a class="dropdown-item" href="#">Accessibility</a></li>
                         <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
@@ -64,9 +60,9 @@
         </div>
     </nav>
 
-    <!-- Image Grid -->
+    <!-- Grid -->
     <div class="container p-2">
-        <ul class="nav nav-pill justify-content-center">
+        <ul class="nav nav-pills justify-content-center">
             <li class="nav-item">
                 <a class="nav-link active" data-bs-toggle="tab" href="#home"><i class="fa-solid fa-table-cells"></i></a>
             </li>
@@ -75,9 +71,10 @@
             </li>
         </ul>
         <div class="tab-content">
+            <!-- Grid View -->
             <div class="tab-pane fade show active" id="home">
                 <div class="row">
-                    <div class="col-4 p-1">
+                    <div class="col-lg-4 col-md-6 col-12 p-1">
                         <div class="post-card">
                             <div class="d-flex justify-content-between">
                                 <h6>Modern Skyline</h6>
@@ -87,124 +84,109 @@
                             <p class="mt-2">A breathtaking view of skyscrapers.</p>
                         </div>
                     </div>
-                    <div class="col-4 p-1">
+                    <div class="col-lg-4 col-md-6 col-12 p-1">
+                        <div class="post-card">
+                            <div class="d-flex justify-content-between">
+                                <h6>Modern Skyline</h6>
+                                <span>03/07</span>
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1572883454114-1cf0031ede2a" class="img-fluid grid-img" alt="">
+                            <p class="mt-2">A breathtaking view of skyscrapers.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 p-1">
+                        <div class="post-card">
+                            <div class="d-flex justify-content-between">
+                                <h6>Modern Skyline</h6>
+                                <span>03/07</span>
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1431576901776-e539bd916ba2" class="img-fluid grid-img" alt="">
+                            <p class="mt-2">A breathtaking view of skyscrapers.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 p-1">
+                        <div class="post-card">
+                            <div class="d-flex justify-content-between">
+                                <h6>Modern Skyline</h6>
+                                <span>03/07</span>
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1574848296471-28f79a036f79" class="img-fluid grid-img" alt="">
+                            <p class="mt-2">A breathtaking view of skyscrapers.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 p-1">
+                        <div class="post-card">
+                            <div class="d-flex justify-content-between">
+                                <h6>Modern Skyline</h6>
+                                <span>03/07</span>
+                            </div>
+                            <img src="https://wallpapers.com/images/hd/hd-new-york-background-luezlh8feixyib7w.jpg" class="img-fluid grid-img" alt="">
+                            <p class="mt-2">A breathtaking view of skyscrapers.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 p-1">
+                        <div class="post-card">
+                            <div class="d-flex justify-content-between">
+                                <h6>Modern Skyline</h6>
+                                <span>03/07</span>
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1609714150965-c81f7e059d85?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGVkaWZpY2lvJTIwbW9kZXJub3xlbnwwfHwwfHx8MA%3D%3D" class="img-fluid grid-img" alt="">
+                            <p class="mt-2">A breathtaking view of skyscrapers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Post View -->
+            <div class="tab-pane fade" id="profile">
+                <div class="row">
+                    <div class="col-12 p-2">
+                        <div class="post-card">
+                            <div class="d-flex justify-content-between">
+                                <h6>Modern Skyline</h6>
+                                <span>03/07</span>
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab" class="img-fluid single-img" alt="">
+                            <p class="mt-2">A breathtaking view of skyscrapers.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 p-2">
                         <div class="post-card">
                             <div class="d-flex justify-content-between">
                                 <h6>Reflective Towers</h6>
                                 <span>04/02</span>
                             </div>
-                            <img src="https://images.unsplash.com/photo-1572883454114-1cf0031ede2a" class="img-fluid grid-img" alt="">
+                            <img src="https://images.unsplash.com/photo-1572883454114-1cf0031ede2a" class="img-fluid single-img" alt="">
                             <p class="mt-2">The glass reflects the city life.</p>
                         </div>
-                    </div>
-                    <div class="col-4 p-1">
-                        <div class="post-card">
-                            <div class="d-flex justify-content-between">
-                                <h6>Urban Sunset</h6>
-                                <span>01/15</span>
-                            </div>
-                            <img src="https://images.unsplash.com/photo-1431576901776-e539bd916ba2" class="img-fluid grid-img" alt="">
-                            <p class="mt-2">Golden hour in the metropolis.</p>
-                        </div>
-                    </div>
-                    <div class="col-4 p-1">
-                        <div class="post-card">
-                            <div class="d-flex justify-content-between">
-                                <h6>City Reflections</h6>
-                                <span>06/20</span>
-                            </div>
-                            <img src="https://images.unsplash.com/photo-1574848296471-28f79a036f79" class="img-fluid grid-img" alt="">
-                            <p class="mt-2">A stunning reflection of city life.</p>
-                        </div>
-                    </div>
-                    <div class="col-4 p-1">
-                        <div class="post-card">
-                            <div class="d-flex justify-content-between">
-                                <h6>Futuristic Architecture</h6>
-                                <span>08/30</span>
-                            </div>
-                            <img src="https://wallpapers.com/images/hd/hd-new-york-background-luezlh8feixyib7w.jpg" class="img-fluid grid-img" alt="">
-                            <p class="mt-2">A modern twist on classic structures.</p>
-                        </div>
-                    </div>
-                    <div class="col-4 p-1">
-                        <div class="post-card">
-                            <div class="d-flex justify-content-between">
-                                <h6>Glass Towers</h6>
-                                <span>09/10</span>
-                            </div>
-                            <img src="https://images.unsplash.com/photo-1609714150965-c81f7e059d85?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGVkaWZpY2lvJTIwbW9kZXJub3xlbnwwfHwwfHx8MA%3D%3D" class="img-fluid grid-img" alt="">
-                            <p class="mt-2">Skyscrapers reaching for the sky.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="tab-pane fade" id="profile">
-                <div class="row">
-                    <div class="col-6 mx-auto post-card">
-                        <div class="d-flex justify-content-between">
-                            <h6>Modern Skyline</h6>
-                            <span>03/07</span>
-                        </div>
-                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab" class="img-fluid single-img" alt="">
-                        <p class="mt-2">A breathtaking view of skyscrapers.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-6 mx-auto post-card">
-                        <div class="d-flex justify-content-between">
-                            <h6>Modern Skyline</h6>
-                            <span>03/07</span>
-                        </div>
-                        <img src="https://images.unsplash.com/photo-1572883454114-1cf0031ede2a" class="img-fluid single-img" alt="">
-                        <p class="mt-2">A breathtaking view of skyscrapers.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-6 mx-auto post-card">
-                        <div class="d-flex justify-content-between">
-                            <h6>Modern Skyline</h6>
-                            <span>03/07</span>
-                        </div>
-                        <img src="https://images.unsplash.com/photo-1431576901776-e539bd916ba2" class="img-fluid single-img" alt="">
-                        <p class="mt-2">A breathtaking view of skyscrapers.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-6 mx-auto post-card">
-                        <div class="d-flex justify-content-between">
-                            <h6>Modern Skyline</h6>
-                            <span>03/07</span>
-                        </div>
-                        <img src="https://images.unsplash.com/photo-1574848296471-28f79a036f79" class="img-fluid single-img" alt="">
-                        <p class="mt-2">A breathtaking view of skyscrapers.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-6 mx-auto post-card">
-                        <div class="d-flex justify-content-between">
-                            <h6>Modern Skyline</h6>
-                            <span>03/07</span>
-                        </div>
-                        <img src="https://wallpapers.com/images/hd/hd-new-york-background-luezlh8feixyib7w.jpg" class="img-fluid single-img" alt="">
-                        <p class="mt-2">A breathtaking view of skyscrapers.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-6 mx-auto post-card">
-                        <div class="d-flex justify-content-between">
-                            <h6>Modern Skyline</h6>
-                            <span>03/07</span>
-                        </div>
-                        <img src="https://images.unsplash.com/photo-1609714150965-c81f7e059d85?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGVkaWZpY2lvJTIwbW9kZXJub3xlbnwwfHwwfHx8MA%3D%3D" class="img-fluid single-img" alt="">
-                        <p class="mt-2">A breathtaking view of skyscrapers.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Bootstrap JavaScript -->
+    <!-- Modal para crear un nuevo post -->
+    <div class="modal fade" id="postModal" tabindex="-1" aria-labelledby="postModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="postModalLabel">Create a New Post</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="text" class="form-control mb-2" placeholder="Post Title">
+                    <input type="text" class="form-control mb-2" placeholder="Date (MM/DD)">
+                    <input type="text" class="form-control mb-2" placeholder="Image URL">
+                    <textarea class="form-control" placeholder="Description"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Add Post</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
