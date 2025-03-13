@@ -11,6 +11,15 @@
     <!-- Fontawesome link (For the icons) -->
     <script src="https://kit.fontawesome.com/072e5df971.js" crossorigin="anonymous"></script>
     <style>
+
+        body {
+            background-color: rgb(20, 20, 20);
+        }
+        nav{
+            border-bottom: 0.5px solid #ffffff;
+            color: rgb(255, 255, 255);
+            background-color: black !important;
+        }
         .grid-img {
             width: 100%;
             height: 300px;
@@ -19,26 +28,31 @@
 
         .single-img {
             width: 100%;
-            height: auto;
-            object-fit: contain;
+            max-height: 500px; 
+            object-fit: cover; 
+            aspect-ratio: 16/9;
         }
 
         .post-card {
-            border: 1px solid #ddd;
+            border: 0.5px solid #ffffff;
             padding: 10px;
             border-radius: 8px;
-            background-color: white;
+            background-color: rgb(8, 8, 8);
+        }
+        #home{
+            color: white;
+            
         }
     </style>
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-light bg-light py-3">
+    <nav class="navbar navbar-light bg-dark py-3">
         <div class="container d-flex justify-content-between">
             <div>
                 <i class="fa-brands fa-instagram fa-xl"></i>
-                <h5 class="d-inline-block fs-5">Instagram</h5>
+                <h5 class="d-inline-block fs-4">Instagram</h5>
             </div>
             <div class="d-flex align-right justify-content-end">
                 <button type="button" class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#postModal">
@@ -158,6 +172,46 @@
                             </div>
                             <img src="https://images.unsplash.com/photo-1572883454114-1cf0031ede2a" class="img-fluid single-img" alt="">
                             <p class="mt-2">The glass reflects the city life.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 p-2">
+                        <div class="post-card">
+                            <div class="d-flex justify-content-between">
+                                <h6>Modern Skyline</h6>
+                                <span>03/07</span>
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1431576901776-e539bd916ba2" class="img-fluid single-img" alt="">
+                            <p class="mt-2">A breathtaking view of skyscrapers.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 p-2">
+                        <div class="post-card">
+                            <div class="d-flex justify-content-between">
+                                <h6>Modern Skyline</h6>
+                                <span>03/07</span>
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1574848296471-28f79a036f79 class="img-fluid single-img" alt="">
+                            <p class="mt-2">A breathtaking view of skyscrapers.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 p-2">
+                        <div class="post-card">
+                            <div class="d-flex justify-content-between">
+                                <h6>Modern Skyline</h6>
+                                <span>03/07</span>
+                            </div>
+                            <img src="https://wallpapers.com/images/hd/hd-new-york-background-luezlh8feixyib7w.jpg" class="img-fluid single-img" alt="">
+                            <p class="mt-2">A breathtaking view of skyscrapers.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 p-2">
+                        <div class="post-card">
+                            <div class="d-flex justify-content-between">
+                                <h6>Modern Skyline</h6>
+                                <span>03/07</span>
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1609714150965-c81f7e059d85?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGVkaWZpY2lvJTIwbW9kZXJub3xlbnwwfHwwfHx8MA%3D%3D" class="img-fluid single-img" alt="">
+                            <p class="mt-2">A breathtaking view of skyscrapers.</p>
                         </div>
                     </div>
                 </div>
